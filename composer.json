@@ -1,5 +1,5 @@
 {
-    "name": "klapaudius/oauth-server-bundle",
+    "name": "axi/oauth-server-bundle",
     "type": "symfony-bundle",
     "description": "Symfony OAuth Server Bundle",
     "keywords": ["oauth", "oauth2", "server"],
@@ -21,7 +21,7 @@
     ],
     "require": {
         "php": "^7.2.5|^8.0",
-        "klapaudius/oauth2-php": "~1.4",
+        "axi/oauth2-php": "dev-master",
         "symfony/dependency-injection": "~5.3",
         "symfony/framework-bundle": "~5.3",
         "symfony/security-bundle": "~5.3",
@@ -43,6 +43,12 @@
         "symfony/templating": "^5.3",
         "symfony/yaml": "^5.3"
     },
+    "repositories" : [
+        {
+            "type": "git",
+            "url": "https://github.com/axi/oauth2-php"
+        }
+    ],
     "suggest": {
         "doctrine/doctrine-bundle": "*",
         "doctrine/mongodb-odm-bundle": "*",
